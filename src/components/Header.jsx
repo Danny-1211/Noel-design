@@ -9,15 +9,15 @@ function Header() {
     { name: "聯絡我", path: "/" },
   ];
   return (
-    <nav className="w-full mx-auto flex items-center justify-start">
-      <div className="logo">
-        <img src={logo} alt="logo" />
+    <nav className="w-full mx-auto max-w-[1296px] h-24 flex items-center justify-start">
+      <div className="logo mr-[318px]">
+        <img className='p-[7px]' src={logo} alt="logo" />
       </div>
-      <div className="hidden lg:flex">
+      <div className="hidden lg:flex max-w[480px] gap-x-10">
         {
           navItems.map((item,index) => {
             return (
-              <Link className="" to={item.path} key={index}>
+              <Link className="text-[24px] py-1 px-2" to={item.path} key={index}>
                 {item.name}
               </Link>
             )
