@@ -1,13 +1,11 @@
-import { useState } from 'react'
-
+import { Outlet } from "react-router-dom";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 className='text-red-400'>Vite + React</h1>
-    </>
-  )
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-1">
+        <Outlet />
+      </main>
+    </div>
+  );
 }
-
-export default App
+export default App;
