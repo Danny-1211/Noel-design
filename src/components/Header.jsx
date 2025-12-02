@@ -11,7 +11,7 @@ function Header() {
   return (
     <nav className="w-full mx-auto max-w-[1296px] h-24 flex items-center justify-start">
       <div className="logo mr-[318px]">
-        <img className='p-[7px]' src={logo} alt="logo" />
+        <img className='' src={logo} alt="logo" />
       </div>
       <div className="hidden lg:flex max-w[480px] gap-x-10">
         {
