@@ -7,7 +7,7 @@ import heroSm from "../assets/imgs/hero-image/hero-sm.png";
 function Home() {
   return (
     <>
-      <div className="banner max-lg:hidden flex justify-end items-center gap-x-6 pl-5 max-lg:pl-0 py-10">
+      <div className="banner max-lg:hidden flex justify-end items-center gap-x-6 pl-[312px] max-lg:pl-0 py-10">
         <div className="max-w-[430] flex flex-col gap-y-[60px] ">
           <div className="flex flex-col gap-y-6">
             <div className="font-semibold text-[40px] leading-12">
@@ -17,7 +17,7 @@ function Home() {
               <div className="font-normal text-[20px] leading-[30px] tracking-[0px] text-[#3B3B3B] mb-4">
                 <div className="flex flex-wrap mb-2">
                   <span>具有 10 年經驗的</span>
-                  <span className="relative px-2">
+                  <span className="relative px-2 -z-20">
                     資深 UI 設計師
                     <img
                       src={mark}
@@ -26,7 +26,7 @@ function Home() {
                     />
                   </span>
                   <span>兼</span>
-                  <span className="relative px-2">
+                  <span className="relative px-2 -z-20">
                     前端工程師
                     <img
                       src={mark}
