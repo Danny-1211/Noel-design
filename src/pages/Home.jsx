@@ -2,8 +2,7 @@ import fb from "../assets/imgs/icon/facebook.svg";
 import ig from "../assets/imgs/icon/instagram.svg";
 import yt from "../assets/imgs/icon/youtube.svg";
 import mark from "../assets/imgs/icon/mark.svg";
-import hero from "../assets/imgs/hero-image/hero-lg.png";
-
+import heroLg from "../assets/imgs/hero-image/hero-lg.png";
 import heroSm from "../assets/imgs/hero-image/hero-sm.png";
 function Home() {
   return (
@@ -56,7 +55,7 @@ function Home() {
           </div>
         </div>
         <div className="">
-          <img className="max-lg:hidden" src={hero} alt="hero_img" />
+          <img className="max-lg:hidden" src={heroLg} alt="hero_img" />
         </div>
       </div>
 
