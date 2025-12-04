@@ -11,7 +11,7 @@ function Header() {
     { name: "首頁", path: "/" },
     { name: "作品集", path: "/collection" },
     { name: "服務項目", path: "/" },
-    { name: "部落格", path: "/" },
+    { name: "部落格", path: "/blog"},
     { name: "聯絡我", path: "/" },
   ];
   return (
