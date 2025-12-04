@@ -8,7 +8,47 @@ import homepageWork1Lg from "../../assets/imgs/homepage-work1/homepage-work1.png
 import homepageWork1BgSm from "../../assets/imgs/homepage-work1/homepage-work1-bg.png";
 import homepageWork1Sm from "../../assets/imgs/homepage-work1/homepage-work1.png";
 
+import homepageWork2BgLg from "../../assets/imgs/homepage-work2/homepage-work2-lg.png";
+import homepageWork2Lg from "../../assets/imgs/homepage-work1/homepage-work1.png";
+import homepageWork2BgSm from "../../assets/imgs/homepage-work2/homepage-work2-sm.png";
+import homepageWork2Sm from "../../assets/imgs/homepage-work1/homepage-work1.png";
+
+import homepageWork3BgLg from "../../assets/imgs/homepage-work3/homepage-work3-bg.png";
+import homepageWork3Lg from "../../assets/imgs/homepage-work3/homepage-work3.png";
+import homepageWork3BgSm from "../../assets/imgs/homepage-work1/homepage-work1-bg.png";
+import homepageWork3Sm from "../../assets/imgs/homepage-work1/homepage-work1.png";
+
+
 function CollectionSection() {
+  const collection = [
+    {
+      homepageWorkBgLg:homepageWork1BgLg,
+      homepageWorkLg:homepageWork1Lg,
+      homepageWorkBgSm:homepageWork1BgSm,
+      homepageWorkSm:homepageWork1Sm,
+      title: "星際旅行訂票平台",
+      desc: "悠遊宇宙的夢想，從這裡開始實現",
+      tags: ["網頁設計", "響應式設計", "Bootstrap"],
+    },
+    {
+      homepageWorkBgLg:homepageWork2BgLg,
+      homepageWorkLg:homepageWork2Lg,
+      homepageWorkBgSm:homepageWork2BgSm,
+      homepageWorkSm:homepageWork2Sm,
+      title: "理財APP",
+      desc: "連動帳戶與行動支付，讓 AI 提供您最好的理財建議",
+      tags: ["APP設計", "iOS", "React"],
+    },
+    {
+      homepageWorkBgLg:homepageWork3BgLg,
+      homepageWorkLg:homepageWork3Lg,
+      homepageWorkBgSm:homepageWork3BgSm,
+      homepageWorkSm:homepageWork3Sm,
+      title: "醫美診所官網",
+      desc: "永保青春的秘密，從粹究開始",
+      tags: ["網頁設計", "響應式設計", "ＷordPress"],
+    },
+  ];
   return (
     <section className="collection section-container w-screen pt-[120px]">
       <div className="max-lg:hidden">
@@ -42,21 +82,21 @@ function CollectionSection() {
                   悠遊宇宙的夢想，從這裡開始實現
                 </p>
 
-                <div className="tag tag-list flex gap-x-[16px] max-xl:flex-col max-xl:gap-y-[8px]">
+                <div className="tag tag-list flex gap-x-[16px] ">
                   <a
-                    className="max-w-[88px]  tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
+                    className=" tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
                     href="#"
                   >
                     網頁設計
                   </a>
                   <a
-                    className="max-w-[104px] tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
+                    className="tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
                     href="#"
                   >
                     響應式設計
                   </a>
                   <a
-                    className="max-w-[104px] tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
+                    className="tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
                     href="#"
                   >
                     Bootstrap
@@ -87,46 +127,53 @@ function CollectionSection() {
         </h2>
         {/* <div className=""> */}
         {/* 背景 圖片 */}
-        <div
-          className="collection-hero px-[40px] mb-[24px] bg-no-repeat bg-cover bg-center w-full  flex justify-center items-center pt-[93px]"
-          style={{ backgroundImage: `url(${homepageWork1BgSm})` }}
-        >
-          <div className="collection-hero-image">
-            <img className="object-cover" src={homepageWork1Sm} alt="" />
-          </div>
-        </div>
-        <div className="text-center mb-[20px]">
-          <div className="mb-[16px]">
-            <h3 className="mb-[8px] font-[700] text-[20px] leading-[24px] text-[#1E1E1E]">
-              星際旅行訂票平台
-            </h3>
-            <p className="font-[400] leading-[24px] text-[#5B5B5B]">
-              悠遊宇宙的夢想，從這裡開始實現
-            </p>
-          </div>
-          <div className="tag flex justify-center gap-x-[8px] font-[400] leading-[24px] text-[rgba(59,59,59,1)]">
-            <span className="bg-[rgba(241,241,241,1)] rounded-2xl py-[4px] px-[12px]">
-              網頁設計
-            </span>
-            <span className="bg-[rgba(241,241,241,1)] rounded-2xl py-[4px] px-[12px]">
-              響應式設計
-            </span>
-            <span className="bg-[rgba(241,241,241,1)] rounded-2xl py-[4px] px-[12px]">
-              Bootstrap
-            </span>
-          </div>
-        </div>
 
-        <div className="collection-card-actions flex justify-center">
-          <button className="btn btn-primary rounded-[5px] bg-[#000] text-[#fff] py-[8px] px-[16px]">
-            <span className=" btn-label mr-[8px]">完整介紹</span>
-            <img
-              className="btn-icon inline-block relative top-[-2px]"
-              src={arrorRight}
-              alt=""
-            />
-          </button>
-        </div>
+        {collection.map((c) => {
+          return (
+            <div>
+              <div
+                className="collection-hero px-[40px] mb-[24px] bg-no-repeat bg-cover bg-center w-full  flex justify-center items-center pt-[93px]"
+                style={{ backgroundImage: `url(${c.homepageWorkBgSm})` }}
+              >
+                <div className="collection-hero-image">
+                  <img className="object-cover" src={c.homepageWorkSm} alt="" />
+                </div>
+              </div>
+
+              <div className="text-center mb-[20px]">
+                <div className="mb-[16px]">
+                  <h3 className="mb-[8px] font-[700] text-[20px] leading-[24px] text-[#1E1E1E]">
+                    {c.title}
+                  </h3>
+                  <p className="font-[400] leading-[24px] text-[#5B5B5B]">
+                    {c.desc}
+                  </p>
+                </div>
+                <div className="tag flex justify-center gap-x-[8px] font-[400] leading-[24px] text-[rgba(59,59,59,1)]">
+                  {c.tags.map((tag) => {
+                    return (
+                      <span className="bg-[rgba(241,241,241,1)] rounded-2xl py-[4px] px-[12px]">
+                        {tag}
+                      </span>
+                    );
+                  })}
+                  
+                </div>
+              </div>
+
+              <div className="collection-card-actions flex justify-center mb-[48px]">
+                <button className="btn btn-primary rounded-[5px] bg-[#000] text-[#fff] py-[8px] px-[16px]">
+                  <span className=" btn-label mr-2">完整介紹</span>
+                  <img
+                    className="btn-icon inline-block relative -top-0.5"
+                    src={arrorRight}
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
