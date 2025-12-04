@@ -10,7 +10,7 @@ function Header() {
   const navItems = [
     { name: "首頁", path: "/" },
     { name: "作品集", path: "/collection" },
-    { name: "服務項目", path: "/" },
+    { name: "服務項目", path: "/service" },
     { name: "部落格", path: "/" },
     { name: "聯絡我", path: "/" },
   ];
