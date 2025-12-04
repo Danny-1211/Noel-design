@@ -1,7 +1,10 @@
 import mark from "../assets/imgs/icon/mark.svg";
 import quoteLeft from "../assets/imgs/icon/quote-left.svg";
 import quoteRight from "../assets/imgs/icon/quote-right.svg";
+import COLLECTION_LIST from "../data/collection_list";
+import Card from "../components/Card";
 function Collection() {
+  const pagesCount = 3; // 先當作總共有幾頁缺版用, 之後套功能
   return (
     <>
       <div className="w-full flex flex-col items-center justify-center lg:max-w-[1920px] ">
@@ -70,6 +73,23 @@ function Collection() {
                   跨國美妝保養電商、個人品牌網站、醫美網站、電子商務
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="collect flex flex-col items-center justify-center py-20 gap-12 lg:py-[120px] lg:gap-[72px]">
+          <div className="collect-list w-full flex items-center justify-center flex-wrap  py-80px  gap-12 lg:max-w-[1296px] lg:gap-6">
+            {COLLECTION_LIST.map((item, index) => {
+              return <Card project={item} key={index} />;
+            })}
+          </div>
+          <div className="collect-paganation">
+            <div className="paganation-container flex ">
+              {Array.from({length:pagesCount }).map((item, index) => (
+                <div key={index} className="flex gap-4 px-[13px] py-0.5 lg:gap-2.5   border border-[#FFFFFF] rounded-sm
+                hover:border-[#1E1E1E] hover:bg-[#1E1E1E]">
+                  <p className="hover:text-[#FFFFFF] leading-6 font-normal text-[24px]"> {index + 1}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
