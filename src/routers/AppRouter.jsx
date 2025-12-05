@@ -3,6 +3,7 @@ import App from "../App";
 import Home from "../pages/Home";
 import Collection from "../pages/Collection";
 import Blog from "../pages/Blog";
+import Services from "../pages/Service";
 const router = createBrowserRouter([
   {
     path: "/",
