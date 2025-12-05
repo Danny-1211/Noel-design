@@ -18,7 +18,7 @@ function ServicesSection() {
     { title: "前端開發", icon: serviceItemFrontEnd },
   ];
   return (
-    <section className="py-[120px]">
+    <section className="py-[120px] px-5">
       <div className="max-lg:hidden px-5">
         <h2 className="collection-title mb-20 mx-auto flex justify-center items-center gap-x-[16px] font-[600] text-[32px] leading-[38.4px] tracking-[35.84px]">
           <img src={titleLeftLg} alt="" />
@@ -58,11 +58,11 @@ function ServicesSection() {
           服務項目
           <img src={titleRightSm} alt="" />
         </h2>
-        <div className="grid grid-cols-1 min-[421px]:grid-cols-2 items-center text-[#fff] gap-y-[24px] gap-x-[24px] mb-[40px]">
+        <div className="flex flex-wrap gap-x-[50px] justify-center items-center text-[#fff] gap-y-[24px] mb-[40px]">
           {services.map((s, idx) => (
             <div
               key={idx}
-              className="flex flex-col justify-center items-center w-full max-w-[306px] aspect-square rounded-2xl bg-center bg-cover bg-no-repeat mx-auto"
+              className="flex flex-col justify-center items-center w-[306px] h-[306px] rounded-2xl bg-center bg-cover bg-no-repeat"
               style={{ backgroundImage: `url(${serviceItem})` }}
             >
               <img src={s.icon} alt="" className="w-16 h-16 mb-3" />

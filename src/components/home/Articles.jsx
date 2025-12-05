@@ -7,6 +7,7 @@ import articleIamge1 from "../../assets/imgs/article-image/article-image1.png";
 import articleIamge2 from "../../assets/imgs/article-image/article-image2.png";
 import articleIamge3 from "../../assets/imgs/article-image/article-image3.png";
 function ArticlesSection() {
+  const articleIamges = [articleIamge1, articleIamge2, articleIamge3];
   return (
     <section className="py-[120px]">
       <div className="max-lg:hidden px-5">
@@ -17,62 +18,28 @@ function ArticlesSection() {
         </h2>
 
         <div className="flex max-w-[1296px] w-[100%] mx-auto gap-x-[24px]">
-          <div className="">
-            <div
-                className="mb-[16px] w-[416px] h-[234px] bg-cover bg-center rounded-lg"
-              style={{ backgroundImage: `url(${articleIamge1})` }}
-            ></div>
-            <div className="mb-[16px] font-[700] text-[20px] leading-[24px]">
-              Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-            </div>
-            <div className="flex justify-between font-[400] leading-[24px] text-[rgba(59,59,59,1)]">
-              <a
-                className="block py-[4px] px-[12px] bg-[rgba(241,241,241,1)] rounded-2xl"
-                href=""
-              >
-                UI/UX 新知
-              </a>
-              <span className="block ">2023/11/20</span>
-            </div>
-          </div>
-
-          <div className="">
-            <div
-                className="mb-[16px] w-[416px] h-[234px] bg-cover bg-center rounded-lg"
-              style={{ backgroundImage: `url(${articleIamge2})` }}
-            ></div>
-            <div className="mb-[16px] font-[700] text-[20px] leading-[24px]">
-              給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
-            </div>
-            <div className="flex justify-between font-[400] leading-[24px] text-[rgba(59,59,59,1)]">
-              <a
-                className="block py-[4px] px-[12px] bg-[rgba(241,241,241,1)] rounded-2xl"
-                href=""
-              >
-                UI/UX 新知
-              </a>
-              <span className="block ">2024/02/10</span>
-            </div>
-          </div>
-
-          <div className="">
-            <div
-                className="mb-[16px] w-[416px] h-[234px] bg-cover bg-center rounded-lg"
-              style={{ backgroundImage: `url(${articleIamge3})` }}
-            ></div>
-            <div className="mb-[16px] font-[700] text-[20px] leading-[24px]">
-              給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
-            </div>
-            <div className="flex justify-between font-[400] leading-[24px] text-[rgba(59,59,59,1)]">
-              <a
-                className="block py-[4px] px-[12px] bg-[rgba(241,241,241,1)] rounded-2xl"
-                href=""
-              >
-                UI/UX 新知
-              </a>
-              <span className="block ">2023/10/18</span>
-            </div>
-          </div>
+          {articleIamges.map((articleIamge) => {
+            return (
+              <div className="">
+                <div
+                  className="mb-[16px] basis-[416px] aspect-[416/234] bg-cover rounded-[8px]"
+                  style={{ backgroundImage: `url(${articleIamge})` }}
+                ></div>
+                <div className="mb-[16px] font-[700] text-[20px] leading-[24px]">
+                  給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
+                </div>
+                <div className="flex justify-between font-[400] leading-[24px] text-[rgba(59,59,59,1)]">
+                  <a
+                    className="block py-[4px] px-[12px] bg-[rgba(241,241,241,1)] rounded-2xl"
+                    href=""
+                  >
+                    UI/UX 新知
+                  </a>
+                  <span className="block ">2024/02/10</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 
@@ -90,7 +57,7 @@ function ArticlesSection() {
               style={{ backgroundImage: `url(${articleIamge1})` }}
             ></div>
             <div className="mb-[16px] font-[700] text-[20px] leading-[24px]">
-              Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+              給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
             </div>
             <div className="flex justify-between font-[400] leading-[24px] text-[rgba(59,59,59,1)]">
               <a
@@ -99,7 +66,7 @@ function ArticlesSection() {
               >
                 UI/UX 新知
               </a>
-              <span className="block ">2024/02/10</span>
+              <span className="block ">2023/11/20</span>
             </div>
           </div>
 
