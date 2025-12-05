@@ -19,7 +19,7 @@ function ArticlesSection() {
         <div className="flex max-w-[1296px] w-[100%] mx-auto gap-x-[24px]">
           <div className="">
             <div
-              className="mb-[16px] basis-[416px] max-h-[234px] aspect-[416/234] bg-cover rounded-[8px]"
+                className="mb-[16px] w-[416px] h-[234px] bg-cover bg-center rounded-lg"
               style={{ backgroundImage: `url(${articleIamge1})` }}
             ></div>
             <div className="mb-[16px] font-[700] text-[20px] leading-[24px]">
@@ -38,7 +38,7 @@ function ArticlesSection() {
 
           <div className="">
             <div
-              className="mb-[16px] basis-[416px] aspect-[416/234] bg-cover rounded-[8px]"
+                className="mb-[16px] w-[416px] h-[234px] bg-cover bg-center rounded-lg"
               style={{ backgroundImage: `url(${articleIamge2})` }}
             ></div>
             <div className="mb-[16px] font-[700] text-[20px] leading-[24px]">
@@ -57,7 +57,7 @@ function ArticlesSection() {
 
           <div className="">
             <div
-              className="mb-[16px] basis-[416px] aspect-[416/234] bg-cover rounded-[8px]"
+                className="mb-[16px] w-[416px] h-[234px] bg-cover bg-center rounded-lg"
               style={{ backgroundImage: `url(${articleIamge3})` }}
             ></div>
             <div className="mb-[16px] font-[700] text-[20px] leading-[24px]">
