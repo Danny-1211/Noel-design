@@ -86,8 +86,8 @@ function Collection() {
             <div className="paganation-container flex ">
               {Array.from({length:pagesCount }).map((item, index) => (
                 <div key={index} className="flex gap-4 px-[13px] py-0.5 lg:gap-2.5   border border-[#FFFFFF] rounded-sm
-                hover:border-[#1E1E1E] hover:bg-[#1E1E1E]">
-                  <p className="hover:text-[#FFFFFF] leading-6 font-normal text-[24px]"> {index + 1}</p>
+                hover:border-[#1E1E1E] hover:bg-[#1E1E1E] hover:text-[#FFFFFF]">
+                  <p className=" leading-6 font-normal text-[24px]"> {index + 1}</p>
                 </div>
               ))}
             </div>
