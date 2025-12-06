@@ -7,7 +7,7 @@ function Card({ project }) {
         </div>
         <div className="card-desc flex flex-col lg:px-4 gap-2 lg:gap-6 ">
           <div className="desc-title flex flex-col  items-start justify-start lg:gap-2 ">
-            <p className="text-[#3B3B3B] font-normalleading-6 text-xl lg:text-base lg:text-[28px]">
+            <p className="text-[#3B3B3B] font-normal leading-6 text-xl lg:text-base lg:text-[28px]">
               {project.title}
             </p>
             <p className="text-[#919191] font-normal  leading-6 lg:text-base">

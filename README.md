@@ -19,6 +19,7 @@ npm run dev
 │   ├── pages/             # 專案的各種頁面 (如 Home, About, Dashboard)
 │   ├── routers/           # 路由控管：存放每個頁面的路由配置
 │   └── data/              # 專門存放資料
+│   ├── services/          # 處理資料邏輯的地方
 │   ├── App.jsx            # 主要應用程式元件
 │   └── main.jsx           # 應用程式入口點
 ├── .gitignore

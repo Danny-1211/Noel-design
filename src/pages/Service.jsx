@@ -267,7 +267,7 @@ const Services = () => {
                   <h3 className="text-[20px] font-bold leading-[30px] text-[#1E1E1E]">
                     {priceItem.price}
                   </h3>
-                  <p className="text-[16px] font-normal leading-6 text-[#5B5B5B]">
+                  <p className="text-base font-normal leading-6 text-[#5B5B5B]">
                     起
                   </p>
                 </div>
@@ -317,7 +317,7 @@ const Services = () => {
                     <h4 className="text-[20px] leading-6 font-bold text-[#3B3B3B] whitespace-nowrap">
                       {customercase.title}
                     </h4>
-                    <p className="text-[16px] font-normal leading-6 text-[#919191]">
+                    <p className="text-base font-normal leading-6 text-[#919191]">
                       {customercase.description}
                     </p>
                   </div>
@@ -327,7 +327,7 @@ const Services = () => {
                         className="flex items-center justify-center bg-[#F1F1F1] rounded-2xl px-3 py-1"
                         key={index}
                       >
-                        <p className="text-[16px] font-normal leading-6 text-[#3B3B3B]">
+                        <p className="text-base font-normal leading-6 text-[#3B3B3B]">
                           {category}
                         </p>
                       </div>
@@ -373,7 +373,7 @@ const Services = () => {
                 <h4 className="text-[20px] font-bold leading-6 text-[#3B3B3B]">
                   {faq.title}
                 </h4>
-                <p className="text-[16px] leading-6 text-[#5B5B5B] font-normal">
+                <p className="text-base leading-6 text-[#5B5B5B] font-normal">
                   {faq.content}
                 </p>
               </div>
