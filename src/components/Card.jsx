@@ -1,7 +1,10 @@
+import { useState } from "react";
+import Modal from "../components/BlogModal.jsx";
 function Card({ project }) {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="card w-full max-w-[351px] lg:max-w-[636px] flex flex-col gap-4 ">
+      <div className="card w-full max-w-[351px] lg:max-w-[636px] flex flex-col gap-4" onClick={() => setIsOpen(true)}>
         <div className="card-img ">
           <img className="border border-[#F1F1F1] rounded-sm lg:rounded-lg" src={project.image_path} alt={project.title}/>
         </div>
@@ -30,6 +33,7 @@ function Card({ project }) {
           </div>
         </div>
       </div>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} project={project}></Modal>
     </>
   );
 }
