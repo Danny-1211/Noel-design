@@ -31,7 +31,7 @@ function BlogDetail() {
               <h2 className="text-[##3B3B3B] font-bold leading-7 text-[24px] lg:text-[32px] lg:leading-[38px]">
                 {BLOGS_ITEM.title}
               </h2>
-              <h3 className="text-[#3B3B3B] font-normal leading-[19px] text-base lg:text-[24px] lg:leading-[28px]">
+              <h3 className="text-[#3B3B3B] font-normal leading-[19px] text-base lg:text-[24px] lg:leading-7">
                 {BLOGS_ITEM.detail.subTitle}
               </h3>
             </section>
@@ -134,7 +134,7 @@ function BlogDetail() {
           })}
         </aside>
       </div>
-      <div className="dash-desktop hidden lg:block lg:mx-auto lg:w-full lg:max-w-[1296px] lg:border-t lg:border-[#C1C1C1] lg:mt-[80px]"></div>
+      <div className="dash-desktop hidden lg:block lg:mx-auto lg:w-full lg:max-w-[1296px] lg:border-t lg:border-[#C1C1C1] lg:mt-20"></div>
       <div className="recommend-desktop hidden lg:w-full lg:flex lg:items-center lg:px-[312px] lg:py-[120px]  ">
         <section className="main-recommend-desktop  lg:w-full  lg:flex lg:flex-col lg:items-center lg:justify-end  lg:gap-10">
           <h2 className="recommend-desktop-title text-[24px] font-bold leading-6 text-[#3B3B3B]">
