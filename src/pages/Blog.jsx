@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
-import lineLeft from "../assets/imgs/icon/line.svg";
-import lineRight from "../assets/imgs/icon/line2.svg";
+import lineLeft_lg from "../assets/imgs/icon/line_left_lg.svg";
+import lineRight_lg from "../assets/imgs/icon/line_right_lg.svg";
+import lineLeft_sm from "../assets/imgs/icon/Line_left_sm.svg";
+import lineRight_sm from "../assets/imgs/icon/Line_right_sm.svg";
 import { getAllBlogs, getBlogCategorires } from "../services/blogService.js";
 function Blog() {
   const BLOGS = getAllBlogs();
@@ -10,11 +12,13 @@ function Blog() {
       <div className="blog w-full  flex flex-col items-center justify-center py-10 lg:max-w-[1920px] lg:py-[120px] lg:gap-20">
         <div className="blog-intro flex flex-col justify-between items-center ">
           <div className="intro-title flex gap-4 items-center justify-center">
-            <img src={lineLeft} alt="line" />
+            <img className="hidden lg:block" src={lineLeft_lg} alt="line" />
+            <img className=" lg:hidden" src={lineLeft_sm} alt="line" />
             <p className="text-[#3B3B3B] font-semibold lg:text-[32px]">
               部落格
             </p>
-            <img src={lineRight} alt="line" />
+            <img className="hidden lg:block" src={lineRight_lg} alt="line" />
+            <img className=" lg:hidden" src={lineRight_sm} alt="line" />
           </div>
           <div className="intro-subTitle">
             <p className="text-[#919191] font-normal lg:text-base">
@@ -74,7 +78,10 @@ function Blog() {
             </div>
             {CATEGORY_SET.map((item, index) => {
               return (
-                <div className="flex shrink-0 gap-1 hover:border-b hover:border-[#1E1E1E] text-[#5B5B5B] hover:text-[#1E1E1E]"  key={index}>
+                <div
+                  className="flex shrink-0 gap-1 hover:border-b hover:border-[#1E1E1E] text-[#5B5B5B] hover:text-[#1E1E1E]"
+                  key={index}
+                >
                   <p className="text-base lg:text-[20px] font-normal leading-[30px] ">
                     {item}
                   </p>
