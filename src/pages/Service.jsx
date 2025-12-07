@@ -8,9 +8,8 @@ import decoRight_lg from "../assets/imgs/icon/Line_right_lg.svg";
 import decoLeft_lg_dark from "../assets/imgs/icon/Line_left_lg_dark.svg";
 import decoRight_lg_dark from "../assets/imgs/icon/Line_right_lg_dark.svg";
 import arrow_down_icon from "../assets/imgs/icon/arrow-downward.svg";
-const services_bg =
-  "bg-[url('../src/assets/imgs/service-bg/service-item-bg.png')]";
-const process_bg = "bg-[url('../src/assets/imgs/service-bg/process-bg.png')]";
+import services_bg from "../assets/imgs/service-bg/service-item-bg.png";
+import process_bg from "../assets/imgs/service-bg/process-bg.png";
 import {
   PROCESS_STEP,
   PRICE_SET,
@@ -51,7 +50,8 @@ const Services = () => {
           <div className="w-full grid grid-cols-1 place-items-center gap-6 md:grid-cols-2 lg:grid-cols-2 lg:max-w-[1296px] xl:px-4 xl:grid-cols-4">
             {SERVICES_SET.map((service, index) => (
               <div
-                className={`${services_bg} w-[306px] py-21 flex flex-col justify-center items-center gap-6 rounded-2xl`}
+                style={{ backgroundImage: `url(${services_bg})` }}
+                className={` bg-cover bg-no-repeat w-[306px] py-21 flex flex-col justify-center items-center gap-6 rounded-2xl`}
                 key={service.id + index}
               >
                 <img
@@ -67,7 +67,8 @@ const Services = () => {
           </div>
         </section>
         <section
-          className={`${process_bg} w-full flex flex-col gap-10 items-center justify-center py-20 bg-size-[100%_100%]`}
+          style={{ backgroundImage: `url(${process_bg})` }}
+          className={`bg-cover bg-no-repeat w-full flex flex-col gap-10 items-center justify-center py-20`}
         >
           {/* 標題旁兩個icon要改白色 */}
           <div className="w-full flex justify-center items-center gap-4">
