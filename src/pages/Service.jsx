@@ -95,7 +95,6 @@ const Services = () => {
               className="w-25 h-1.5 object-cover hidden md:block lg:block"
             />
           </div>
-          {/* 流程數字要引入 Tourney 字體 下載懶人包：https://fonts.google.com/specimen/Tourney?query=tourney */}
           <div className="w-full grid grid-cols-1 place-items-center gap-4 px-3 md:max-w-[655px] lg:max-w-[655px]">
             {PROCESS_STEP.map((process, index) => (
               <React.Fragment key={`process-${process.id + index}`}>
@@ -103,7 +102,7 @@ const Services = () => {
                   className="w-full flex flex-col items-center justify-center bg-[#3B3B3B] border border-[#919191] pt-6 pb-12 px-6 gap-2 rounded-sm lg:flex-row lg:gap-8 lg:py-6 lg:px-8"
                   key={process.id + index}
                 >
-                  <h2 className="font-sans text-[48px] font-normal leading-[120%] text-[#919191] lg:text-[72px]">
+                  <h2 className="number-font text-[48px] font-normal leading-[120%] text-[#919191] lg:text-[72px]">
                     {process.id}
                   </h2>
                   <div className="w-full flex flex-col items-center justify-center gap-2 lg:items-start">
