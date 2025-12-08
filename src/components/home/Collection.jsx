@@ -121,56 +121,64 @@ function CollectionSection() {
           className="collection-hero relative px-5 bg-no-repeat bg-cover bg-center w-full h-[800px] flex items-center gap-x-[55px]"
           style={{ backgroundImage: `url(${homepageWork2BgLg})` }}
         >
-          <div className="gray bg-[rgba(13,12,7,0.5)] absolute top-0 left-0 w-[50%] h-full"></div>
-
-          {/*  */}
-          <div className="collection-card w-[526px] relative h-[400px] rounded-[24px] overflow-hidden px-10 pt-[80px] pb-[56px]">
+          {/* 左側佔據一半的灰色 */}
+          <div className="gray bg-[rgba(13,12,7,0.5)] absolute top-0 left-0 w-[50%] h-full">
+            {/* 理財APP卡片（重點：靠右20px +垂直置中） */}
             <div
-              className="collection-card-overlay absolute inset-0 bg-white/10 px-10 pt-[80px] pb-[40px]"
-              style={{
-                backdropFilter: "blur(8px)",
-                WebkitBackdropFilter: "blur(8px)",
-              }}
+              className="
+       collection-card  xl:w-[526px] max-xl:w-[400px] h-[400px] rounded-[24px] overflow-hidden px-10 pt-[80px] pb-[56px]
+       absolute xl:right-[13.75%] max-xl:right-[10%] top-1/2 -translate-y-1/2
+     "
             >
-              <div className="collection-card-header mb-[40px] pb-[40px] border-b border-[#fff]">
-                <h3 className="collection-card-title text-[#fff] font-[700] text-[28px] leading-[33.6px] mb-[8px]">
-                  理財APP
-                </h3>
-                <p className="collection-card-desc text-[#fff] leading-[24px] mb-[24px]">
-                  連動帳戶與行動支付，讓 AI 提供您最好的理財建議
-                </p>
+              {/* 不透明層 */}
+              <div
+                className="collection-card-overlay w-full absolute inset-0 bg-white/10 px-10 pt-[80px] pb-[40px]"
+                style={{
+                  backdropFilter: "blur(8px)",
+                  WebkitBackdropFilter: "blur(8px)",
+                }}
+              >
+                {/* 理財APP */}
+                <div className="collection-card-header w-full mb-[40px] pb-[40px] border-b border-[#fff]">
+                  <h3 className="collection-card-title text-[#fff] font-[700] text-[28px] leading-[33.6px] mb-[8px]">
+                    理財APP
+                  </h3>
+                  <p className="collection-card-desc text-[#fff] leading-[24px] mb-[24px]">
+                    連動帳戶與行動支付，讓 AI 提供您最好的理財建議
+                  </p>
 
-                <div className="tag tag-list flex gap-x-[16px] ">
-                  <a
-                    className=" tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
-                    href="#"
-                  >
-                    APP設計
-                  </a>
-                  <a
-                    className="tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
-                    href="#"
-                  >
-                    iOS
-                  </a>
-                  <a
-                    className="tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
-                    href="#"
-                  >
-                    React
-                  </a>
+                  <div className="tag tag-list flex gap-x-[16px]">
+                    <a
+                      className="tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
+                      href="#"
+                    >
+                      APP設計
+                    </a>
+                    <a
+                      className="tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
+                      href="#"
+                    >
+                      iOS
+                    </a>
+                    <a
+                      className="tag-item py-[4px] px-[12px] bg-[#fff] rounded-[16px]"
+                      href="#"
+                    >
+                      React
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <div className="collection-card-actions flex justify-center">
-                <button className="w-[152px] btn btn-primary rounded-[5px] bg-[#000] text-[#fff] py-[16px] px-[32px]">
-                  <span className=" btn-label mr-[8px]">完整介紹</span>
-                  <img
-                    className="btn-icon inline-block relative top-[-2px]"
-                    src={arrorRight}
-                    alt=""
-                  />
-                </button>
+                <div className="collection-card-actions flex justify-center">
+                  <button className="w-[152px] btn btn-primary rounded-[5px] bg-[#000] text-[#fff] py-[16px] px-[32px]">
+                    <span className="btn-label mr-[8px]">完整介紹</span>
+                    <img
+                      className="btn-icon inline-block relative top-[-2px]"
+                      src={arrorRight}
+                      alt=""
+                    />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
