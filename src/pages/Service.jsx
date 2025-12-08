@@ -16,7 +16,7 @@ import {
   CUSTOMER_CASE,
   COMMON_QUESTION,
   SERVICES_SET,
-} from "../data/servies_set.js";
+} from "../data/services_set.js";
 const Services = () => {
   return (
     <>
