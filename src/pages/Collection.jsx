@@ -1,12 +1,12 @@
-import { useState } from "react";
 import mark from "../assets/imgs/icon/mark.svg";
 import quoteLeft from "../assets/imgs/icon/quote-left.svg";
 import quoteRight from "../assets/imgs/icon/quote-right.svg";
-import COLLECTION_LIST from "../data/collection_list";
+import {getAllCollections} from "../services/collectionService.js";
 import Card from "../components/Card";
 
 function Collection() {
   const pagesCount = 3; // 先當作總共有幾頁缺版用, 之後套功能
+  const COLLECTION_LIST = getAllCollections();
   return (
     <>
       <div className="w-full flex flex-col items-center justify-center lg:max-w-[1920px] ">
