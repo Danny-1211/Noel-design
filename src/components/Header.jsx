@@ -11,7 +11,7 @@ function Header() {
     { name: "首頁", path: "/" },
     { name: "作品集", path: "/collection" },
     { name: "服務項目", path: "/service" },
-    { name: "部落格", path: "/blog"},
+    { name: "部落格", path: "/blog" },
     { name: "聯絡我", path: "/" },
   ];
   return (
@@ -46,10 +46,7 @@ function Header() {
               <img src={logo} alt="logo" />
             </div>
             {/* 手機 menu 按鈕 */}
-            <div
-              className="meunBtn lg:hidden"
-              onClick={() => setIsOpen(!isOpen)}
-            >
+            <div className="meunBtn lg:hidden" onClick={() => setIsOpen(false)}>
               <img src={isOpen ? close : menu} alt="menu" />
             </div>
           </div>
@@ -59,6 +56,7 @@ function Header() {
                 className="font-normal text-[20px] leading-[30px] text-center py-1 px-2"
                 to={item.path}
                 key={index}
+                onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </Link>
