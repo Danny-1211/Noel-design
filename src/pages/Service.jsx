@@ -11,13 +11,18 @@ import arrow_down_icon from "../assets/imgs/icon/arrow-downward.svg";
 import services_bg from "../assets/imgs/service-bg/service-item-bg.png";
 import process_bg from "../assets/imgs/service-bg/process-bg.png";
 import {
-  PROCESS_STEP,
-  PRICE_SET,
-  CUSTOMER_CASE,
-  COMMON_QUESTION,
-  SERVICES_SET,
-} from "../data/services_set.js";
+  getProcessStep,
+  getPriceSet,
+  getCustomerCase,
+  getCommonQuestion,
+  getServicesSet
+} from "../services/service.js";
 const Services = () => {
+  const PRICE_SET = getPriceSet();
+  const PROCESS_STEP = getProcessStep();
+  const CUSTOMER_CASE = getCustomerCase();
+  const COMMON_QUESTION = getCommonQuestion();
+  const SERVICES_SET = getServicesSet();
   return (
     <>
       <div className="w-full mx-auto pt-10">
