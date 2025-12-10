@@ -4,7 +4,7 @@
 
 ## 🎯 專案簡介
 
-Noel Design 是一個完整的全棧 React 應用程式，展示了一位具有 10 年經驗的資深 UI 設計師兼前端工程師的專業能力。網站提供：
+Noel Design 是一個 React 應用程式，展示了一位具有 10 年經驗的資深 UI 設計師兼前端工程師的專業能力。網站提供：
 
 - 📌 個人品牌展示與作品集
 - 📝 技術部落格文章管理
@@ -206,27 +206,6 @@ npm run lint
 - **動畫效果**: 懸停效果、過渡動畫
 - **無障礙**: 語義化 HTML、清晰的對比度
 
-## 📊 API 資料流
-
-```
-BlogService (blogService.js)
-    ↓
-Blog List Data (blog_list.js)
-    ↓
-Pages & Components (Blog.jsx, BlogDetail.jsx, RecommendCard.jsx)
-```
-
-```
-Collection List Data (collection_list.js)
-    ↓
-Pages & Components (Collection.jsx, Card.jsx, BlogModal.jsx)
-```
-
-```
-Services Set Data (servies_set.js)
-    ↓
-Service Page (Service.jsx)
-```
 
 ## 📝 部落格內容
 
@@ -268,4 +247,4 @@ npm run build
 
 ---
 
-**製作者**: Noel | **最後更新**: 2024
+**製作者**: danny | **最後更新**: 2025
