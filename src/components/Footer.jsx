@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer>
       <div className="max-lg:hidden w-full" style={{ backgroundImage: `url(${footerBg})` }}>
-        <div className="px-5 max-w-[1062px] h-[424px] mx-auto">
+        <div className="px-5 max-w-[1296px] h-[424px] mx-auto">
           <div className="flex items-center h-full ">
             <div className="w-[686px] flex flex-col gap-y-6">
               <div className="text-[34px] font-bold">Noel</div>
